@@ -21,3 +21,61 @@ svg {
 circle {
   cursor: pointer;
 }
+
+
+.game-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.hexagon {
+  width: 300px;
+  height: 260px;
+  background-color: black;
+  margin: 0 auto;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.player-scores {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.player-token {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.player-1 { background-color: #FFA500; }
+.player-2 { background-color: #FFFF00; }
+.player-3 { background-color: #87CEEB; }
+.player-4 { background-color: #FFC0CB; }
+
+.hidden { display: none; }
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.game-board svg {
+  background-color: #f0f0f0;
+}
